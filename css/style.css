@@ -39,8 +39,10 @@ img{
 	height: 56px;
 	float: right;
 	text-align: center;
-	color: #333;
-	border-radius: 30px;
+	color: #ce2e3c;
+	border-radius: 23px;
 	cursor: pointer;
-	background: linear-gradient(to right,#ce2e3c,#da6709);
+	background: #fff;
+	margin-right: 5%;
+	margin-top: 5%;
 }
