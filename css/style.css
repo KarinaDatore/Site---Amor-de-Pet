@@ -8,7 +8,7 @@
 	box-shadow: none;
 }
 body{
-	background-color: #f5f5f5;
+	background: url(../images/bg.png);
 }
 a{
 	text-decoration: none;
@@ -24,25 +24,202 @@ img{
 	width: 100%;
 	float: left;
 	padding: 3%, 4%;
-	/*background: url(../images/inicial.jpg) no-repeat;*/
+	height: 200px;
+	background: url(../images/inicial.jpg)center center/400px  no-repeat;
+
 }
 .logo{
 	width: 100px;
 	height: 100px;
 	float: left;
-	background: url(../images/logo.jpg) center center/100px no-repeat;
+	background: url(../images/logo.png) center center/90px no-repeat;
 	font-size: 0;
-	margin-left: 5%;
+	margin-left: 1%;
+	margin-top: -10px;
 }
 .btn-menu{
-	width: 56px;
-	height: 56px;
+	width: 50px;
+	height: 50px;
 	float: right;
 	text-align: center;
-	color: #ce2e3c;
-	border-radius: 23px;
+	color: #fff;
+	border-radius: 18px;
 	cursor: pointer;
-	background: #fff;
+	background: #F8BBD0;
 	margin-right: 5%;
 	margin-top: 5%;
 }
+.container{
+	height: 10%;
+	width: 100%;
+}
+.patrocinadores img{
+	/*
+	Titulo logo, letras:
+		cor: #F78AB0
+		letra: Buxton Sketch
+		size: 24
+	*/
+	width: 120px;
+	height: 40px;
+	margin-top: 10%;
+	float: left;
+	margin-left: 5%;
+}
+.titulo{
+	width: 70%;
+	height: 60px;
+	margin-left: 14%;
+	margin-top: 10%;
+}
+.sobre p{
+	margin-top: 10%;
+	font-family: Arial;
+	font-size: 11pt;
+	text-align: center;
+	color: #666666;
+	margin-left: 10%;
+	margin-right: 7%;
+}
+.logo-face{
+	width: 40px;
+	height: 40px;
+	background: url(../images/face.png) center center/40px no-repeat;
+	font-size: 0;
+	margin-left: 45%;
+	margin-top: 5%;
+}
+.adotar img{
+	width: 250px;
+	height: 250px;
+	margin-top: 10%;
+	border-radius: 18px 18px 0 0;
+	margin-left: 20%;
+}
+.adotar p{
+	width: 250px;
+	font-size: 14pt;
+	background-color: #FCE4EC;
+	border-radius: 0 0 18px 18px;
+	margin-top: -4px;
+	margin-left: 20%;
+	color: #880E4F;
+}
+
+
+/*--footer--*/
+.footer{
+	background: rgb(242, 227, 227);
+	padding: 3em 0em;
+	text-align: center;
+	margin-top: 10%;
+}
+.about{
+	margin-top: 20%;
+}
+.advice{
+	margin-top: 20%;
+}
+.join-in{
+	margin-top: 20%;
+}
+.copy-rt{
+	margin-top: 20%;
+}
+.follow-us{
+	margin-top: 20%;
+}
+.about h4,.advice h4,.join-in h4,.follow-us h4,.copy-rt h4{
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
+	font-size:1.5em;
+	margin:0;
+	padding: 10px 10px 20px;
+}
+.about ul li,.advice ul li,.join-in ul li,.follow-us ul li{
+	margin: 0;
+	padding: 0;
+}
+.about ul li a,.advice ul li a,.join-in ul li a,.follow-us ul li a{
+	text-decoration:none;
+	color:#333;
+	line-height: 2em;
+}
+.about ul li a:hover,.advice ul li a:hover,.join-in ul li a:hover{
+	color:#D9534F;
+}
+.about ul {
+	margin: 0;
+	padding: 0px 12px 0px;
+	color: rgb(124, 132, 124);
+	text-align: center;
+}
+.advice ul{
+	margin: 0;
+	padding: 0px 135px 0px;
+	list-style-image:url(../images/mini-arrow.jpg);
+	color: rgb(124, 132, 124);
+	text-align: center;
+}
+.join-in ul{
+	padding: 0px 135px 0px;
+	margin: 0;
+	color: rgb(124, 132, 124);
+}
+.follow-us ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+.follow-us ul li{
+	margin:0px 2px;
+	padding:0;
+	display: inline;
+}
+.follow-us ul li a{
+	background:url(../images/social.png);
+	width:24px;
+	height:24px;
+	display: inline-block;
+}
+.follow-us ul li a.fb{
+	background-position: 24px 0px;
+}
+.follow-us ul li a.fb:hover{
+	background-position: 24px 24px;
+}
+.follow-us ul li a.twt{
+	background-position:0px 0px;
+}
+.follow-us ul li a.twt:hover{
+	background-position:0px 24px;
+}
+.follow-us ul li a.gpls{
+	background-position: 49px 0px;
+}
+.follow-us ul li a.gpls:hover{
+	background-position: 49px 24px;
+}
+.follow-us ul li a.pint{
+	background-position: -26px 0px;
+}
+.follow-us ul li a.pint:hover{
+	background-position: -26px 24px;
+}
+.follow-us ul li a.lnkdin{
+	background-position: 74px 0px;
+}
+.follow-us ul li a.lnkdin:hover{
+	background-position: 74px 24px;
+}
+.copy-rt p a{
+	text-decoration:none;
+	color:#DD3912;
+}
+.copy-rt p a:hover{
+	color:#80A610;
+}
+.copy-rt p {
+  line-height: 1.7em;
+}
+/*--footer--*/
