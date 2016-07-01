@@ -49,6 +49,65 @@ img{
 	margin-right: 5%;
 	margin-top: 5%;
 }
+/*FIM DO CABEÇALHO*/
+
+/*MENU*/
+.menu{
+	display: none;
+	width: 100%;
+	height: 80%;
+	position: fixed;
+	background-color: rgba(0,0,0,0.9);
+	top: 0;
+	left: 0;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: none;
+	border-radius: 0 !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+.btn-close{
+	font-size: 3em;
+	color: #fff;
+	cursor: pointer;	
+}
+.menu ul{
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+.menu li{
+	padding: 1.5%;
+}
+.menu li a{
+	font-size: 2em;
+	color: #fff;
+	padding: 1.5% 3%;
+}
+.menu li a:hover{
+	border: 1px solid #F8BBD0;
+}
+.menu li a:focus{
+	color: #fff;
+	background-color: #ea6d97
+}
+#toTop {
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	overflow: hidden;
+	width: 40px;
+	height: 22px;
+	border: none;
+	text-indent: 100%;
+	background: url(../images/move-top.png) no-repeat 0px 0px;
+}
+/*FIM DO MENU*/
+
+/*CONTEÚDO*/
 .container{
 	height: 10%;
 	width: 100%;

@@ -12,21 +12,33 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="images/pata.ico">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script> 
 	<title>Campanha - Amor de Pet</title>
 </head>
 <body>	
-	<header class="cabecalho">
+	<header class="cabecalho" id="home">
 		<a href="index.html" ><h1 class="logo"></h1></a>
 		<button class="btn-menu"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></button>
+			<nav class="menu">
+				<ul>
+					<li><a class="btn-close" href="#home">Home</a></li>
+					<li><a class="btn-close" href="#patrocinadores">Patrocinadores</a></li>
+					<li><a class="btn-close" href="#sobre">Sobre</a></li>
+					<li><a class="btn-close" href="#ajuda">Como nos Ajudar?</a></li>
+					<li><a class="btn-close" href="#adote">Adote um Pet</a></li>
+					<li><a class="btn-close" href="#equipe">Equipe</a></li>
+					<li><a class="btn-close" href="#contato">Contato</a></li>
+				</ul>
+			</nav>
 	</header>
-	<div class="container">
-		<img class="titulo" src="images/patro.png">
+	<div class="container" id="patrocinadores">
+		<img class="titulo" src="images/patrocinadores.png">
 			<div class="patrocinadores">
 				<a href="#" target="_blank"><img src="images/petz.png"></a>
 				<a href="#" target="_blank"><img src="images/republica.png"></a>
 			</div>
 	</div>
-	<div class="sobre">
+	<div class="sobre" id="sobre">
 		<img class="titulo" src="images/sobre.png">
 		<p>A campanha Amor de Pet tem como objetivo arrecadar ração, remédios e promover a adoção de cachorros completamente abandonados, devido à uma desapropriação que ocorreu na cidade de Praia Grande, São Paulo.
 		Temos cerca de 40 animais que dependem de doação para comer, precisam de remédios e precisam ser doados à pessoas de bom coração. Participe, seja um patrocinador e participe da nossa divulgação. 
@@ -34,7 +46,7 @@
 
 		<p>ESTA CAMPANHA É EXCLUSIVA DA FATEC PRAIA GRANDE, NÃO RECEBEMOS AJUDA DA PREFEITURA MUNICIPAL DE PRAIA GRANDE, NEM DE VEREADORES OU POLÍTICOS DA REGIÃO.	</p>
 	</div>
-	<div class="sobre">
+	<div class="sobre" id="ajuda">
 		<img class="titulo" src="images/ajuda.png">
 		<p>Nossa companha continua com todo o gás, mas continuamos precisando de muitas coisas e contamos não somente com alunos e professores de FATEC Praia Grande nesse projeto, mas sim de toda comunidade. Continuamos precisando de RAÇÃO, REMÉDIOS (Vermifugos, vitaminas, antibióticos) e COBERTORES. </p>
 
@@ -44,7 +56,7 @@
 
 	</div>
 
-	<div class="sobre">
+	<div class="sobre" id="adote">
 		<img class="titulo" src="images/adote.png">
 		<p>Interessados em adotar, entrar em contato com a Bruna Santana. </p>
 		<a href="#"><h1 class="logo-face"></h1></a>
@@ -94,7 +106,15 @@
 			</div>
 	</div>
 
-	<div class="footer" id="contato">
+	<div class="container" id="equipe">
+		<img class="titulo" src="images/equipe.png">
+			<div class="equipe">
+				<a href="#" target="_blank"><img src="images/petz.png"></a>
+				<a href="#" target="_blank"><img src="images/republica.png"></a>
+			</div>
+	</div>
+
+	<div class="footer" id="contato" id="contato">
 		<div class="advice" id="sobre">
 			<h4>Sobre</h4>
 				<ul>
@@ -124,6 +144,27 @@
 			</ul>
 		</div>
 	</div>
-		
-</body>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+	<script>
+		$(".btn-menu").click(function(){
+			$(".menu").show();
+		});
+		$(".btn-close").click(function(){
+			$(".menu").hide();
+		});
+
+	</script>
+	<script type="text/javascript">
+				$(document).ready(function() {
+						var defaults = {
+						containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear' 
+						};
+				$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+		</script>
+	<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a> == $0
+	</body>
 </html>
