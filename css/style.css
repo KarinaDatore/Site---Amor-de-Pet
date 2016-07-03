@@ -1,11 +1,12 @@
 * {
 	margin: 0;
-	padding: 0;
+	padding: 3%, 4%;
 	font-size: 100%;
 	border: none;
 	outline: none;
-	font-weight: 300;
 	box-shadow: none;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 400;
 }
 body{
 	/*background: url(../images/bg.png);*/
@@ -39,7 +40,6 @@ img{
 	margin-top: -10px;
 }
 .btn-menu{
-	font-family: 'Open Sans', sans-serif;
 	width: 50px;
 	height: 50px;
 	float: right;
@@ -55,7 +55,6 @@ img{
 
 /*MENU*/
 .menu{
-	font-family: 'Open Sans', sans-serif;
 	display: none;
 	width: 100%;
 	height: 80%;
@@ -87,7 +86,6 @@ img{
 	font-size: 2em;
 	color: #fff;
 	padding: 1.5% 3%;
-	font-family: 'Open Sans', sans-serif;
 }
 .menu li a:hover{
 	border: 1px solid #DCEDC8;
@@ -170,7 +168,14 @@ img{
 }
 .sobre p{
 	margin-top: 10%;
-	font-family: 'Open Sans', sans-serif;
+	font-size: 11pt;
+	text-align: center;
+	color: #666666;
+	margin-left: 10%;
+	margin-right: 7%;
+}
+.sobreAjuda p{
+	margin-top: 10%;
 	font-size: 11pt;
 	text-align: center;
 	color: #666666;
@@ -202,7 +207,6 @@ img{
 	margin-left: 18%;
 	color: #880E4F;
 	background: url(../images/bg.png);
-	font-family: 'Open Sans', sans-serif;
 }
 .equipeContaier{
 	margin-top: 5%;
@@ -250,14 +254,12 @@ img{
 	float: right;
 	font-size: 10pt;
 	color: #212121;
-	font-family: 'Open Sans', sans-serif;
 	margin-right: 5%;
 }
 .textoEquipe h3{
 	margin-top: -25%;
 	text-align: center;
 	float: right;
-	font-family: 'Open Sans', sans-serif;
 	color: #212121;
 	font-size: 12pt;
 	margin-right: 5%;
@@ -293,7 +295,6 @@ img{
 	margin-top: 20%;
 }
 .about h4,.advice h4,.join-in h4,.follow-us h4,.copy-rt h4{
-	font-family: 'Quicksand', sans-serif;
 	font-weight: 600;
 	font-size:1.5em;
 	margin:0;
@@ -304,7 +305,6 @@ img{
 	padding: 0;
 }
 .about ul li a,.advice ul li a,.join-in ul li a,.follow-us ul li a{
-	font-family: 'Quicksand', sans-serif;
 	text-decoration:none;
 	color:#333;
 	line-height: 2em;
@@ -461,6 +461,12 @@ img{
 	margin-left: 10%;
 	margin-right: 7%;
 }
+.sobreAjuda p{
+	margin-top: 10%;
+	font-size: 14pt;
+	margin-left: 10%;
+	margin-right: 7%;
+}
 .about h4,.advice h4,.join-in h4,.follow-us h4,.copy-rt h4{
 	font-size:1.7em;
 }
@@ -556,6 +562,12 @@ img{
 	margin-left: 10%;
 	margin-right: 7%;
 }
+.sobreAjuda p{
+	margin-top: 10%;
+	font-size: 14pt;
+	margin-left: 10%;
+	margin-right: 7%;
+}
 .equipeContaier{
 	margin-top: 5%;
 	width: 100%;
@@ -603,7 +615,6 @@ img{
 	float: right;
 	font-size: 10pt;
 	color: #212121;
-	font-family: 'Open Sans', sans-serif;
 	margin-right: 5%;
 }
 .textoEquipe h3{
@@ -798,6 +809,12 @@ img{
 	margin-left: 10%;
 	margin-right: 7%;
 }
+.sobreAjuda p{
+	margin-top: 10%;
+	font-size: 14pt;
+	margin-left: 10%;
+	margin-right: 7%;
+}
 .adotar{
 	width: 30%;
 	float: left;
@@ -834,7 +851,6 @@ img{
 .about{
 	margin-top: 6%;
 	width: 40%;
-	font-family: 'Quicksand', sans-serif;
 	text-decoration:none;
 	color:#333;
 	line-height: 2em;
@@ -858,16 +874,137 @@ img{
 	margin-left: 6%;
 }
 .about h4,.advice h4,.join-in h4,.follow-us h4,.copy-rt h4{
-	font-family: 'Quicksand', sans-serif;
 	font-size:1.5em;
 	padding: 10px 10px 20px;
 }
 .about li,.advice li,.join-in li,.follow-li h4,.copy-rt li{
-	font-family: 'Quicksand', sans-serif;
 	font-size: 10pt;
 }
 }
+/* DESKTOP DEVICES*/
+@media screen and (min-width: 1200px){
+.cabecalho{
+	width: 100% !important;
+	float: left;
+	padding: 3%, 4%;
+	height: 550px;
+	background: url(../images/inicial.jpg)center center/1250px  no-repeat;
+}
+.logo{
+	margin-top: -2% !important;
+}
+.btn-menu{
+	display: none;
+}
+.menu{
+	width: 100% !important;
+	height: 56px !important;
+	line-height: 56px !important;
+	background-color: rgba(220,237,200,0.5);
+	display: block !important;
+	position: fixed;
+}
+.menu li{
+	padding: 0;
+	float: left;
+}
+.menu li a{
+	padding: 15px !important;
+	font-size: 1.7em !important;
+	color: #555555;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 600 !important;
+	margin-left: 2% !important;
+	margin-right: 2% !important;
+}
+.menu li a:hover{
+	border: none;
+	color: #c5c5c5;
+}
+.container{
+	height: 550px;
+	width: 80%;
+	margin-left: 9%;
+	margin-right: 9%;
+	background-color: #F5F5F5;
+	border-radius: 2px 2px 2px 2px;
+}
+.fundoP{
+	height: 550px;
+	width: 100%;
+	background-color: #DCEDC8;
+}
+.patrocinadores img{
+	margin-top: 10%;
+	float: left;
+	margin-left: 25% !important;
+}
+.imgPetz{
+	width: 250px;
+	height: 130px;
+	float: left;
+	background: url(../images/petz.png) center center/250px no-repeat;
+	font-size: 0;
+	margin-left: 27% !important;
+	margin-top: 10px;
+}
 
+.imgRepublica{
+	width: 280px;
+	height: 140px;
+	float: left;
+	background: url(../images/republica.png) center center/280px no-repeat;
+	font-size: 0;
+	margin-left: 1%;
+	margin-top: 8% !important;	
+}
+.titulo{
+	width: 30%;
+	height: 80px;
+	margin-left: 35%;
+	margin-top: 15%;
+	margin-right: 35% !important;
+}
+.adotar{
+	width: 23%;
+	float: left;
+	margin-left: 2%;
+}
+.adotar img{
+	width: 250px;
+	height: 250px;
+	margin-top: 10%;
+	border-radius: 18px 18px 0 0;
+	margin-left: 2% !important;
+	background: url(../images/bg.png);
+
+}
+.adotar p{
+	width: 250px;
+	font-size: 12pt !important;
+	margin-top: -4px !important;
+	margin-left: 2% !important;
+	margin-right: 0%;
+}
+.logo-face{
+	width: 40px;
+	height: 40px;
+	background: url(../images/face.png) center center/40px no-repeat;
+	font-size: 0;
+	margin-left: 50%;
+	margin-top: 0;
+}
+.sobreAjuda p{
+	margin-top: 3%;
+}
+.equipeTodo{
+	margin-top: 5%;
+	float: left;
+	margin-left: 4%;
+	height: 40% !important;
+	width: 25%;
+}
+}
 /* DESKTOP DEVICES*/
 @media screen and (min-width: 1366px){
 
