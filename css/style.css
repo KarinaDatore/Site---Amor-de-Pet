@@ -8,7 +8,8 @@
 	box-shadow: none;
 }
 body{
-	background: url(../images/bg.png);
+	/*background: url(../images/bg.png);*/
+	background-color: #F5F5F5;
 }
 a{
 	text-decoration: none;
@@ -38,6 +39,7 @@ img{
 	margin-top: -10px;
 }
 .btn-menu{
+	font-family: 'Open Sans', sans-serif;
 	width: 50px;
 	height: 50px;
 	float: right;
@@ -45,7 +47,7 @@ img{
 	color: #fff;
 	border-radius: 18px;
 	cursor: pointer;
-	background: #F8BBD0;
+	background: #DCEDC8; /*#F8BBD0*/
 	margin-right: 5%;
 	margin-top: 5%;
 }
@@ -53,11 +55,12 @@ img{
 
 /*MENU*/
 .menu{
+	font-family: 'Open Sans', sans-serif;
 	display: none;
 	width: 100%;
 	height: 80%;
 	position: fixed;
-	background-color: rgba(0,0,0,0.9);
+	background-color: rgba(0,0,0,0.8);
 	top: 0;
 	left: 0;
 	-webkit-background-clip: padding-box;
@@ -84,13 +87,14 @@ img{
 	font-size: 2em;
 	color: #fff;
 	padding: 1.5% 3%;
+	font-family: 'Open Sans', sans-serif;
 }
 .menu li a:hover{
-	border: 1px solid #F8BBD0;
+	border: 1px solid #DCEDC8;
 }
 .menu li a:focus{
-	color: #fff;
-	background-color: #ea6d97
+	color: #80A610;
+	background-color: #DCEDC8;
 }
 #toTop {
 	display: none;
@@ -108,32 +112,65 @@ img{
 /*FIM DO MENU*/
 
 /*CONTEÚDO*/
+.artigo{
+	width: 90%;
+	float: left;
+	padding: 3% 4%;
+}
+.conteudoArtigo2{
+	margin-top: 10%;
+}
+.artigo img{
+	height: 60%;
+	width: 60%;
+	margin-left: 20%;
+}
 .container{
-	height: 10%;
+	height: 200px;
+	width: 80%;
+	margin-left: 9%;
+	margin-right: 9%;
+	background-color: #F5F5F5;
+	border-radius: 2px 2px 2px 2px;
+}
+.fundoP{
+	height: 250px;
 	width: 100%;
+	background-color: #DCEDC8;
 }
 .patrocinadores img{
-	/*
-	Titulo logo, letras:
-		cor: #F78AB0
-		letra: Buxton Sketch
-		size: 24
-	*/
-	width: 120px;
-	height: 40px;
 	margin-top: 10%;
 	float: left;
 	margin-left: 5%;
 }
+.imgPetz{
+	width: 150px;
+	height: 80px;
+	float: left;
+	background: url(../images/petz.png) center center/150px no-repeat;
+	font-size: 0;
+	margin-left: 2%;
+	margin-top: 10px;
+}
+
+.imgRepublica{
+	width: 180px;
+	height: 50px;
+	float: left;
+	background: url(../images/republica.png) center center/180px no-repeat;
+	font-size: 0;
+	margin-left: 1%;
+	margin-top: 10px;	
+}
 .titulo{
 	width: 70%;
 	height: 60px;
-	margin-left: 14%;
+	margin-left: 15%;
 	margin-top: 10%;
 }
 .sobre p{
 	margin-top: 10%;
-	font-family: Arial;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 11pt;
 	text-align: center;
 	color: #666666;
@@ -153,7 +190,8 @@ img{
 	height: 250px;
 	margin-top: 10%;
 	border-radius: 18px 18px 0 0;
-	margin-left: 20%;
+	margin-left: 18%;
+	background: url(../images/bg.png);
 }
 .adotar p{
 	width: 250px;
@@ -161,14 +199,80 @@ img{
 	background-color: #FCE4EC;
 	border-radius: 0 0 18px 18px;
 	margin-top: -4px;
-	margin-left: 20%;
+	margin-left: 18%;
 	color: #880E4F;
+	background: url(../images/bg.png);
+	font-family: 'Open Sans', sans-serif;
 }
+.equipeContaier{
+	margin-top: 5%;
+	height: 40%;
+	width: 100%;
+}
+.equipe{
+	width: 80%;
+	height: 8%;
+	margin-top: 10%;
+	margin-left: 10%;
+	margin-right: 10%;
+	border-radius: 0px 25px 0px 25px;
+	background-color: #FFECB3;
+}
+.equipe2{
+	width: 80%;
+	height: 8%;
+	margin-top: 10%;
+	margin-left: 10%;
+	margin-right: 10%;
+	border-radius: 25px 0px 25px 0px;
+	background-color: #FFCDD2;
+}
+.equipe3{
+	width: 80%;
+	height: 8%;
+	margin-top: 10%;
+	margin-left: 10%;
+	margin-right: 10%;
+	border-radius: 0px 25px 0px 25px;
+	background-color: #C5CAE9;
+}
+.equipeImg{
+	width: 100px;
+	height: 100px;
+	margin-top: 10%;
+	border-radius: 0px 10px 0px 10px;
+	margin-left: 10%;
 
+}
+.textoEquipe p{
+	margin-top: -17%;
+	text-align: center;
+	float: right;
+	font-size: 10pt;
+	color: #212121;
+	font-family: 'Open Sans', sans-serif;
+	margin-right: 5%;
+}
+.textoEquipe h3{
+	margin-top: -25%;
+	text-align: center;
+	float: right;
+	font-family: 'Open Sans', sans-serif;
+	color: #212121;
+	font-size: 12pt;
+	margin-right: 5%;
+}
+.iconeEquipe{
+	width: 20px;
+	height: 20px;
+	background: url(../images/face.png) center center/20px no-repeat;
+	margin-top: -10% !important;
+	border-radius: 2px 2px 2px 2px;
+}
 
 /*--footer--*/
 .footer{
-	background: rgb(242, 227, 227);
+	background-color: #DCEDC8;
 	padding: 3em 0em;
 	text-align: center;
 	margin-top: 10%;
@@ -200,6 +304,7 @@ img{
 	padding: 0;
 }
 .about ul li a,.advice ul li a,.join-in ul li a,.follow-us ul li a{
+	font-family: 'Quicksand', sans-serif;
 	text-decoration:none;
 	color:#333;
 	line-height: 2em;
@@ -282,3 +387,488 @@ img{
   line-height: 1.7em;
 }
 /*--footer--*/
+
+/* SMALL DEVICES*/
+@media screen and (min-width: 480px){
+.cabecalho{
+	width: 100%;
+	float: left;
+	padding: 3%, 4%;
+	height: 300px;
+	background: url(../images/inicial.jpg)center center/500px  no-repeat;
+}
+.logo{
+	width: 150px;
+	height: 150px;
+	float: left;
+	background: url(../images/logo.png) center center/90px no-repeat;
+	font-size: 0;
+	margin-left: 1%;
+	margin-top: -10px;
+}
+.menu{
+	height: 60%;
+}
+.container{
+	height: 300px;
+}
+.patrocinadores img{
+	margin-top: 10%;
+	float: left;
+	margin-left: 10%;
+}
+.fundoP{
+	height: 300px;
+	width: 100%;
+	background-color: #DCEDC8;
+}
+.imgPetz{
+	width: 150px;
+	height: 80px;
+	float: left;
+	background: url(../images/petz.png) center center/160px no-repeat;
+	font-size: 0;
+	margin-left: 15% !important;
+	margin-top: 10% !important;
+}
+
+.imgRepublica{
+	width: 180px;
+	height: 50px;
+	float: left;
+	background: url(../images/republica.png) center center/180px no-repeat;
+	font-size: 0;
+	margin-left: 1%;
+	margin-top: 15% !important;	
+}
+.adotar img{
+	width: 250px;
+	height: 250px;
+	margin-top: 10%;
+	border-radius: 18px 18px 0 0;
+	margin-left: 25%;
+	background: url(../images/bg.png);
+}
+.adotar p{
+	width: 250px;
+	font-size: 14pt;
+	margin-top: -4px !important;
+	margin-left: 25% !important;
+}
+.sobre p{
+	margin-top: 10%;
+	font-size: 14pt;
+	margin-left: 10%;
+	margin-right: 7%;
+}
+.about h4,.advice h4,.join-in h4,.follow-us h4,.copy-rt h4{
+	font-size:1.7em;
+}
+.about ul li a,.advice ul li a,.join-in ul li a,.follow-us ul li a{
+	font-size:1.6em;
+}
+}
+
+/* TABLETS DEVICES*/
+@media screen and (min-width: 640px){
+.cabecalho{
+	width: 100%;
+	float: left;
+	padding: 3%, 4%;
+	height: 400px;
+	background: url(../images/inicial.jpg)center center/650px  no-repeat;
+
+}
+.logo{
+	width: 200px;
+	height: 200px;
+	float: left;
+	background: url(../images/logo.png) center center/150px no-repeat;
+	font-size: 0;
+	margin-left: 1%;
+	margin-top: -30px !important;
+}
+.menu{
+	height: 70%;
+}
+.container{
+	height: 300px;
+}
+.patrocinadores img{
+	margin-top: 10%;
+	float: left;
+	margin-left: 10%;
+}
+.fundoP{
+	height: 450px;
+	width: 100%;
+	background-color: #DCEDC8;
+}
+.imgPetz{
+	width: 150px;
+	height: 80px;
+	float: left;
+	background: url(../images/petz.png) center center/160px no-repeat;
+	font-size: 0;
+	margin-left: 20% !important;
+	margin-top: 10% !important;
+}
+
+.imgRepublica{
+	width: 180px;
+	height: 50px;
+	float: left;
+	background: url(../images/republica.png) center center/180px no-repeat;
+	font-size: 0;
+	margin-left: 4%;
+	margin-top: 15% !important;	
+}
+.titulo{
+	width: 70%;
+	height: 100px;
+	margin-left: 15%;
+	margin-top: 10%;
+}
+.adotar{
+	width: 40%;
+	float: left;
+	margin-left: 4%;
+}
+.adotar img{
+	width: 250px;
+	height: 250px;
+	margin-top: 10%;
+	border-radius: 18px 18px 0 0;
+	margin-left: 10%;
+	background: url(../images/bg.png);
+	margin-right: 3%;
+}
+.adotar p{
+	width: 250px;
+	font-size: 14pt;
+	margin-top: -4px !important;
+	margin-left: 10% !important;
+	margin-right: 3%;
+}
+.sobre p{
+	margin-top: 10%;
+	font-size: 14pt;
+	margin-left: 10%;
+	margin-right: 7%;
+}
+.equipeContaier{
+	margin-top: 5%;
+	width: 100%;
+	min-height: 70% !important;
+	height: 70% !important;
+}
+.equipeTodo{
+	margin-top: 5%;
+	float: left;
+	margin-right: 2%;
+	height: 60%;
+}
+.equipe{
+	width: 280px;
+	height: 100px;
+	margin-top: 10%;
+	border-radius: 0px 25px 0px 25px;
+	background-color: #FFECB3;
+}
+.equipe2{
+	width: 280px;
+	height: 100px;
+	margin-top: 10%;
+	border-radius: 25px 0px 25px 0px;
+	background-color: #FFCDD2;
+}
+.equipe3{
+	width: 280px;
+	height: 100px;
+	margin-top: 10%;
+	border-radius: 0px 25px 0px 25px;
+	background-color: #C5CAE9;
+}
+.equipeImg{
+	width: 100px;
+	height: 100px;
+	margin-top: 10%;
+	border-radius: 0px 10px 0px 10px;
+	margin-left: 10%;
+
+}
+.textoEquipe p{
+	margin-top: -17%;
+	text-align: center;
+	float: right;
+	font-size: 10pt;
+	color: #212121;
+	font-family: 'Open Sans', sans-serif;
+	margin-right: 5%;
+}
+.textoEquipe h3{
+	margin-top: -25%;
+	text-align: center;
+	float: right;
+	font-family: 'Open Sans', sans-serif;
+	color: #212121;
+	font-size: 12pt;
+	margin-right: 5%;
+}
+.iconeEquipe{
+	width: 20px;
+	height: 20px;
+	background: url(../images/face.png) center center/20px no-repeat;
+	margin-top: -10% !important;
+	border-radius: 2px 2px 2px 2px;
+}
+.footer{
+	margin-top: 110% !important;
+	background-color: #DCEDC8;
+	padding: 3em 0em;
+	text-align: center;
+	margin-top: 10%;
+}
+.about h4,.advice h4,.join-in h4,.follow-us h4,.copy-rt h4{
+	font-size:1.7em;
+}
+.about ul li a,.advice ul li a,.join-in ul li a,.follow-us ul li a{
+	font-size:1.6em;
+}
+}
+
+/* TABLETS DEVICES*/
+@media screen and (min-width: 768px){
+.cabecalho{
+	width: 100%;
+	float: left;
+	padding: 3%, 4%;
+	height: 500px;
+	background: url(../images/inicial.jpg)center center/800px  no-repeat;
+
+}
+.logo{
+	width: 200px;
+	height: 200px;
+	float: left;
+	background: url(../images/logo.png) center center/150px no-repeat;
+	font-size: 0;
+	margin-left: 1%;
+	margin-top: -30px !important;
+}
+.menu{
+	height: 70%;
+}
+.container{
+	height: 500px;
+}
+.patrocinadores img{
+	margin-top: 10%;
+	float: left;
+	margin-left: 10%;
+}
+.fundoP{
+	height: 450px;
+	width: 100%;
+	background-color: #DCEDC8;
+}
+.imgPetz{
+	width: 300px;
+	height: 160px;
+	float: left;
+	background: url(../images/petz.png) center center/300px no-repeat;
+	font-size: 0;
+	margin-left: 10% !important;
+	margin-top: 10% !important;
+}
+
+.imgRepublica{
+	width: 300px;
+	height: 140px;
+	float: left;
+	background: url(../images/republica.png) center center/300px no-repeat;
+	font-size: 0;
+	margin-left: 4%;
+	margin-top: 15% !important;	
+}
+.adotar{
+	width: 40%;
+	float: left;
+	margin-left: 6%;
+}
+.equipeTodo{
+	margin-top: 5%;
+	float: left;
+	margin-left: 6%;
+	height: 60%;
+}
+}
+/* TABLETS DEVICES*/
+@media screen and (min-width: 1024px){
+.cabecalho{
+	width: 100%;
+	float: left;
+	padding: 3%, 4%;
+	height: 600px;
+	background: url(../images/inicial.jpg)center center/1100px  no-repeat;
+
+}
+.logo{
+	width: 300px;
+	height: 300px;
+	float: left;
+	background: url(../images/logo.png) center center/250px no-repeat;
+	font-size: 0;
+	margin-left: 1%;
+	margin-top: -5% !important;
+}
+.menu{
+	height: 90%;
+}
+.btn-menu{
+	margin-top: 6%;
+}
+.container{
+	height: 600px;
+	width: 80%;
+	margin-left: 9%;
+	margin-right: 9%;
+	background-color: #F5F5F5;
+	border-radius: 2px 2px 2px 2px;
+}
+.fundoP{
+	height: 450px;
+	width: 100%;
+	background-color: #DCEDC8;
+}
+.patrocinadores img{
+	margin-top: 10%;
+	float: left;
+	margin-left: 25% !important;
+}
+.imgPetz{
+	width: 250px;
+	height: 130px;
+	float: left;
+	background: url(../images/petz.png) center center/250px no-repeat;
+	font-size: 0;
+	margin-left: 22% !important;
+	margin-top: 10px;
+}
+
+.imgRepublica{
+	width: 280px;
+	height: 140px;
+	float: left;
+	background: url(../images/republica.png) center center/280px no-repeat;
+	font-size: 0;
+	margin-left: 1%;
+	margin-top: 8% !important;	
+}
+.titulo{
+	width: 40%;
+	height: 80px;
+	margin-left: 30%;
+	margin-top: 10%;
+}
+.artigo{
+	width: 100% !important;
+}
+.conteudoArtigo{
+	width: 60% !important;
+	margin-top: 0% !important;
+	float: left;
+	margin-left: 2%;
+}
+.conteudoArtigo2{
+	width: 80% !important;
+	margin-top: 30% !important;
+	margin-left: 6%;
+}
+.artigo img{
+	height: 40%;
+	width: 28%;
+	margin-top: 5%;
+	margin-left: 0 !important;
+	float: left;
+}
+.sobre p{
+	margin-top: 10%;
+	font-size: 14pt;
+	margin-left: 10%;
+	margin-right: 7%;
+}
+.adotar{
+	width: 30%;
+	float: left;
+	margin-left: 0;
+}
+.adotar img{
+	width: 250px;
+	height: 250px;
+	margin-top: 10%;
+	border-radius: 18px 18px 0 0;
+	margin-left: 25% !important;
+	background: url(../images/bg.png);
+	margin-right: 3%;
+}
+.adotar p{
+	width: 250px;
+	font-size: 14pt;
+	margin-top: -4px !important;
+	margin-left: 25% !important;
+	margin-right: 3%;
+}
+.equipeTodo{
+	margin-top: 5%;
+	float: left;
+	margin-left: 2%;
+	height: 30% !important;
+}
+.footer{
+	margin-top: 10% !important;
+	background-color: #DCEDC8;
+	float: left !important;
+	width: 100%;
+}
+.about{
+	margin-top: 6%;
+	width: 40%;
+	font-family: 'Quicksand', sans-serif;
+	text-decoration:none;
+	color:#333;
+	line-height: 2em;
+	float: left;
+	margin-left: 6%;
+}
+.advice{
+	float: left;
+	margin-top: 6%;
+	width: 40%;
+}
+.join-in{
+	float: left;
+	margin-top: 6% !important;
+	width: 40%;
+}
+.follow-us{
+	float: left;
+	margin-top: 6%;
+	width: 40%;
+	margin-left: 6%;
+}
+.about h4,.advice h4,.join-in h4,.follow-us h4,.copy-rt h4{
+	font-family: 'Quicksand', sans-serif;
+	font-size:1.5em;
+	padding: 10px 10px 20px;
+}
+.about li,.advice li,.join-in li,.follow-li h4,.copy-rt li{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 10pt;
+}
+}
+
+/* DESKTOP DEVICES*/
+@media screen and (min-width: 1366px){
+
+}
