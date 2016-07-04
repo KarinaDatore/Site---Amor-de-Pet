@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+	<title>Campanha - Amor de Pet</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-widht, initial-scale=1">
 	<meta name="description" content="Campanha Amor de Pet">
@@ -9,12 +10,23 @@
 	<meta name="author" content="Karina Datore e Alyne Vieira">
 	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script src="js/jquery-2.1.4.min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="images/pata.ico">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script> 
 	<link href='https://fonts.googleapis.com/css?family=Dosis:400,500,600,700' rel='stylesheet' type='text/css'>
-	<title>Campanha - Amor de Pet</title>
+	<script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+		</script>
 </head>
 <body>	
 	<header class="cabecalho" id="home">
@@ -63,11 +75,15 @@
 			</div>
 			<img src="images/doar.png">
 			<div class="conteudoArtigo2">
-				<p>ATENÇÃO! A loja Petz - Litoral Plaza Shopping/Praia Grande agora é ponto de arrecadação! Ao adquirir produtos para doar, a Petz concederá 10% de desconto. Os produtos comprados na loja serão encaminhados para Campanha da Fatec PG. Toda doação poderá ser entregue no próprio prédio da FATEC PG no escritório da EMPRESA JUNIOR, entrando em contato através do email campanhaamorpet@gmail.com ou até mesmo pela página do Facebook. </p>
-
-				<p>Se houver necessidade, retiramos no local. </p>
+				<p>ATENÇÃO! A loja Petz - Litoral Plaza Shopping/Praia Grande agora é ponto de arrecadação! Ao adquirir produtos para doar, a Petz concederá 10% de desconto. Os produtos comprados na loja serão encaminhados para Campanha da Fatec PG. 
+				Toda doação poderá ser entregue nos pontos de arrecadações, em Santos na loja Republica dos bichos, e em Praia Grande na loja Petz.
+				Os endereços estão nos banners abaixo:</p>
 			</div>
 		</article>
+	</div>
+	<div class="banners">
+		<img src="images/banner1.jpg">
+		<img src="images/banner2.jpg">
 	</div>
 
 	<div class="sobreAjuda" >
@@ -285,14 +301,25 @@
 		});
 
 	</script>
+	<!-- Facebook -->
+		<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+  				var js, fjs = d.getElementsByTagName(s)[0];
+  				if (d.getElementById(id)) return;
+  					js = d.createElement(s); js.id = id;
+  					js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.6";
+  					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+			</script>
+	<!-- Done Facebook-->
 	<script type="text/javascript">
 				$(document).ready(function() {
-						var defaults = {
+						/*var defaults = {
 						containerID: 'toTop', // fading element id
 						containerHoverID: 'toTopHover', // fading element hover id
 						scrollSpeed: 1200,
 						easingType: 'linear' 
-						};
+						};*/
 				$().UItoTop({ easingType: 'easeOutQuart' });
 		});
 		</script>

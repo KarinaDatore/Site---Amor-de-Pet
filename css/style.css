@@ -58,7 +58,7 @@ img{
 .menu{
 	display: none;
 	width: 100%;
-	height: 80%;
+	height: 90%;
 	position: fixed;
 	background-color: rgba(0,0,0,0.8);
 	top: 0;
@@ -87,13 +87,13 @@ img{
 	font-size: 2em;
 	color: #fff;
 	padding: 1.5% 3%;
+	margin-right: 15%;
 }
 .menu li a:hover{
 	border: 1px solid #DCEDC8;
 }
 .menu li a:focus{
 	color: #80A610;
-	background-color: #DCEDC8;
 }
 #toTop {
 	display: none;
@@ -190,6 +190,13 @@ img{
 	color: #666666;
 	margin-left: 10%;
 	margin-right: 7%;
+}
+.banners img{
+	height: 70%;
+	width: 70%;
+	margin-left: 15%;
+	border-radius: 15px 15px 15px 15px;
+	margin-top: 5%;
 }
 .logo-face{
 	width: 40px;
@@ -289,19 +296,19 @@ img{
 	margin-top: 10%;
 }
 .about{
-	margin-top: 20%;
+	margin-top: 10%;
 }
 .advice{
-	margin-top: 20%;
+	margin-top: 5%;
 }
 .join-in{
-	margin-top: 20%;
+	margin-top: 10%;
 }
 .copy-rt{
-	margin-top: 20%;
+	margin-top: 10%;
 }
 .follow-us{
-	margin-top: 20%;
+	margin-top: 10%;
 }
 .about h4,.advice h4,.join-in h4,.follow-us h4,.copy-rt h4{
 	font-weight: 600;
@@ -329,7 +336,7 @@ img{
 }
 .advice ul{
 	margin: 0;
-	padding: 0px 135px 0px;
+	padding: 0px 145px 0px;
 	list-style-image:url(../images/mini-arrow.jpg);
 	color: rgb(124, 132, 124);
 	text-align: center;
@@ -416,7 +423,7 @@ img{
 	margin-top: -10px;
 }
 .menu{
-	height: 60%;
+	height: 70%;
 }
 .container{
 	height: 300px;
@@ -504,7 +511,13 @@ img{
 	margin-top: -30px !important;
 }
 .menu{
-	height: 70%;
+	height: 75%;
+}
+.titulo{
+	width: 50%;
+	height: 70px;
+	margin-left: 25%;
+	margin-top: 10%;
 }
 .container{
 	height: 300px;
@@ -537,12 +550,6 @@ img{
 	font-size: 0;
 	margin-left: 4%;
 	margin-top: 15% !important;	
-}
-.titulo{
-	width: 70%;
-	height: 100px;
-	margin-left: 15%;
-	margin-top: 10%;
 }
 .adotar{
 	width: 40%;
@@ -655,6 +662,13 @@ img{
 .about ul li a,.advice ul li a,.join-in ul li a,.follow-us ul li a{
 	font-size:1.6em;
 }
+.advice ul{
+	margin: 0;
+	padding: 0px 185px 0px;
+	list-style-image:url(../images/mini-arrow.jpg);
+	color: rgb(124, 132, 124);
+	text-align: center;
+}
 }
 
 /* TABLETS DEVICES*/
@@ -677,7 +691,13 @@ img{
 	margin-top: -30px !important;
 }
 .menu{
-	height: 70%;
+	height: 75%;
+}
+.titulo{
+	width: 50%;
+	height: 70px;
+	margin-left: 25%;
+	margin-top: 10%;
 }
 .container{
 	height: 500px;
@@ -711,6 +731,22 @@ img{
 	margin-left: 4%;
 	margin-top: 15% !important;	
 }
+.artigo img{
+	height: 200px;
+	width: 400px;
+	margin-top: 5%;
+	margin-left: 20%;
+}
+.banners{
+	float: left;
+}
+.banners img{
+	height: 40%;
+	width: 40%;
+	margin-left: 7%;
+	border-radius: 15px 15px 15px 15px;
+	margin-top: 10%;
+}
 .adotar{
 	width: 40%;
 	float: left;
@@ -721,6 +757,13 @@ img{
 	float: left;
 	margin-left: 6%;
 	height: 60%;
+}
+.advice ul{
+	margin: 0;
+	padding: 0px 175px 0px;
+	list-style-image:url(../images/mini-arrow.jpg);
+	color: rgb(124, 132, 124);
+	text-align: center;
 }
 }
 /* TABLETS DEVICES*/
@@ -812,6 +855,16 @@ img{
 	margin-left: 0 !important;
 	float: left;
 }
+.banners{
+	float: left;
+}
+.banners img{
+	height: 30%;
+	width: 30%;
+	margin-left: 13%;
+	border-radius: 15px 15px 15px 15px;
+	margin-top: 10%;
+}
 .sobre p{
 	margin-top: 10%;
 	font-size: 14pt;
@@ -873,7 +926,7 @@ img{
 }
 .join-in{
 	float: left;
-	margin-top: 6% !important;
+	margin-top: 6%;
 	width: 40%;
 }
 .follow-us{
@@ -908,10 +961,10 @@ img{
 .menu{
 	width: 100% !important;
 	height: 56px !important;
-	line-height: 56px !important;
+	line-height: 56px;
 	background-color: rgba(220,237,200,0.5);
 	display: block !important;
-	position: fixed;
+	position: absolute;
 }
 .menu li{
 	padding: 0;
@@ -923,7 +976,7 @@ img{
 	color: #555555;
 	font-family: 'Dosis', sans-serif;
 	font-weight: 600 !important;
-	margin-left: 2% !important;
+	margin-left: 3% !important;
 	margin-right: 2% !important;
 }
 .menu li a:hover{
@@ -931,7 +984,6 @@ img{
 	color: #c5c5c5;
 }
 .menu li a:focus{
-
 	background-color: transparent;
 }
 .btn-close{
@@ -981,6 +1033,16 @@ img{
 	margin-top: 5%;
 	margin-right: 35% !important;
 }
+.banners{
+	float: left;
+}
+.banners img{
+	height: 25%;
+	width: 25%;
+	margin-left: 17%;
+	border-radius: 15px 15px 15px 15px;
+	margin-top: 5%;
+}
 .adotar{
 	width: 23%;
 	float: left;
@@ -1020,8 +1082,88 @@ img{
 	height: 40% !important;
 	width: 25%;
 }
+.footer{
+	margin-top: 10%;
+	background-color: #DCEDC8;
+	float: left;
+	width: 100%;
+}
+.about{
+	margin-top: 0;
+	width: 20%;
+	text-decoration:none;
+	color:#333;
+	line-height: 2em;
+	float: left;
+	margin-left: 2%;
+}
+.advice{
+	float: left;
+	margin-top: 0;
+	width: 20%;
+	margin-left: 4%;
+}
+.join-in{
+	margin-top: 0;
+	float: left;
+	width: 20%;
+	margin-left: 2%;
+}
+.follow-us{
+	float: left;
+	margin-top: 0;
+	width: 20%;
+	margin-left: 6%;
+}
+.about h4,.advice h4,.join-in h4,.follow-us h4,.copy-rt h4{
+	font-size:1.5em;
+	padding: 10px 10px 20px;
+}
+.about li,.advice li,.join-in li,.follow-li h4,.copy-rt li{
+	font-size: 11pt;
+}
+.about ul li a,.advice ul li a,.join-in ul li a,.follow-us ul li a{
+	text-decoration:none;
+	color:#333;
+	line-height: 2em;
+	font-size: 11pt;
+}
+.advice ul{
+	margin: 0;
+	padding: 0px 90px 0px;
+	list-style-image:url(../images/mini-arrow.jpg);
+	color: rgb(124, 132, 124);
+
+}
+.join-in ul{
+	padding: 0px 60px 0px;
+	margin: 0;
+	color: rgb(124, 132, 124);
+}
 }
 /* DESKTOP DEVICES*/
 @media screen and (min-width: 1366px){
-
+.cabecalho{
+	width: 100% !important;
+	margin-right: -10px;
+	padding: 3%, 4%;
+	height: 750px;
+	background: url(../images/inicial.jpg)center center/1450px  no-repeat;
+}
+.logo{
+	margin-top: -2% !important;
+}
+.container{
+	height: 750px;
+	width: 80%;
+	margin-left: 9%;
+	margin-right: 9%;
+	background-color: #F5F5F5;
+	border-radius: 2px 2px 2px 2px;
+}
+.fundoP{
+	height: 550px;
+	width: 100%;
+	background-color: #DCEDC8;
+}
 }
